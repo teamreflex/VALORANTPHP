@@ -27,14 +27,14 @@ As the package is PSR-18 compliant, it does not come with an HTTP client by defa
 
 You can use a client such as Guzzle, and pass an instance of it when instantiating:
 
-```bash
+```php
 $http = new GuzzleHttp\Client();
 $valorant = new Valorant($http, 'api_key_here', AccountRegion::AMERICAS(), MatchRegion::AMERICA());
 ```
 
 Now you're ready to make requests:
 
-```bash
+```php
 $player = $valorant->fetchAccountByRiot('Kairu#1481');
 ```
 
