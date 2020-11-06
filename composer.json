@@ -1,0 +1,36 @@
+{
+    "name": "team-reflex/valorant-php",
+    "description": "PSR-18 compliant package for the VALORANT API by Riot.",
+    "require": {
+        "ext-json": "*",
+        "php": "^7.4",
+        "psr/http-client": "^1.0",
+        "illuminate/collections": "~8.0",
+        "spatie/data-transfer-object": "^2.5",
+        "myclabs/php-enum": "^1.7"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.4",
+        "guzzlehttp/guzzle": "^7.2"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kyle Ward",
+            "email": "kairu@team-reflex.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Reflex\\Valorant\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    }
+}
